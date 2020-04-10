@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h2>Odd Even Converter</h2>
+<h5>Click submit to see if your number is odd or even!</h5>
+</head>
+<body>
+<p id = 'demo'></p>
+<p id = 'demo2'></p>
+<input id="demo1"/>
+
+<button onclick="OddOrEven()">Submit</button>
+<script>
+//odd or even to do it.
+function OddOrEven() {
+	var number = document.getElementById('demo1').value;
+	if (number%2 == 0) {
+		document.getElementById('demo').innerHTML = 'Your number is even!';
+	}
+	else {
+		document.getElementById('demo').innerHTML = 'Your number is odd!';
+	}
+}
+
+
+</script>
+
+</body>
+</html>
